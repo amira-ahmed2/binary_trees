@@ -11,8 +11,8 @@ if (tree)
 {
 size_t nLeft = 0, nRight = 0;
 
-nLeft = tree->left ? nLeft + binary_tree_height(tree->left) : 0;
-nRight = tree->right ? nRight + binary_tree_height(tree->right) : 0;
+nLeft = tree->left ? 1 + binary_tree_height(tree->left) : 0;
+nRight =  tree->right ? 1 + binary_tree_height(tree->right) : 0;
 return ((nLeft > nRight) ? nLeft : nRight);
 }
 return (0);
