@@ -14,6 +14,7 @@ if (parent == NULL)
 return (NULL);
 
 newNode = binary_tree_node(parent, value);
+
 if (newNode == NULL)
 return (NULL);
 
