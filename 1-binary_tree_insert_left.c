@@ -4,8 +4,8 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - Stores recursively each level in an array of strings
- *
+ * binary_tree_insert_left - inserts a node as the left-child
+ * @parent: pointer to the node to insert the left-child in
  * @value: Pointer to the node to print
  * Return: length of printed tree after process
 */
@@ -19,7 +19,7 @@ return (NULL);
 new_node = binary_tree_node(parent, value);
 
 if (new_node == NULL)
-return NULL;
+    return (NULL);
 
 if (parent->left != NULL)
 {
